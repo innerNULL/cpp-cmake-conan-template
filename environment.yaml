@@ -1,0 +1,22 @@
+name: venv
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - cmake>=4.1.2
+  - conan>=2.21.0
+  - compilers==1.11.0
+  - gdb>=16.3
+  - libstdcxx-ng==15.2.0
+  - libgcc-ng==15.2.0
+  - make>=4.4.1
+  - mpich>=4.3.1
+  - ninja>=1.10.2
+  - openblas>=0.3.18         
+  - perl==5.32.1
+  - python==3.11
+  - setuptools>=65
+  - _libgcc_mutex=0.1=conda_forge
+variables:
+  CMAKE_CXX_COMPILER: $CONDA_PREFIX/bin/g++
+  CMAKE_MAKE_PROGRAM: $CONDA_PREFIX/bin/make

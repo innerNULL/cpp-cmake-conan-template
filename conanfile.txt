@@ -1,0 +1,15 @@
+[requires]
+abseil/20250814.0
+fmt/11.2.0
+glaze/7.4.0
+nlohmann_json/3.12.0
+spdlog/1.15.3
+
+[generators]
+CMakeDeps
+CMakeToolchain
+
+[layout]
+cmake_layout
+
+[options]
