@@ -10,6 +10,11 @@ namespace example_lib {
 namespace example {
 
 
+BotStatus Bot::move_to(const std::string& direction) {
+  return BotStatus { .live = true };
+}
+
+
 int32_t add(const int32_t a, const int32_t b) {
   return a + b;
 }
