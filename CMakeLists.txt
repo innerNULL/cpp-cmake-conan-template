@@ -50,4 +50,7 @@ target_link_libraries(example PRIVATE example_lib external_deps)
 target_link_options(example PRIVATE -Wl,--start-group -Wl,--end-group)
 
 
+add_subdirectory(${CMAKE_SOURCE_DIR}/bindings/python/example_lib)
+
+
 add_subdirectory(${CMAKE_SOURCE_DIR}/test)
