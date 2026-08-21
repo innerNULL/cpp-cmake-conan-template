@@ -59,7 +59,7 @@ import py_example_lib
 
 a = example_lib.add(1, 2)
 b = py_example_lib.Bot()
-c = b.move_to("up")
+c = b.move_to('up')
 
 print(a)
 print(b)
