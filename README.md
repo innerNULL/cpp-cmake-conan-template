@@ -67,6 +67,11 @@ print(c)
 "
 ```
 
+## Containerized Building To Support Multiple Platforms
+```shell
+bash ./scripts/containerized_build.sh ./scripts/containerized_build.centos.ini
+```
+
 ## Template Structure Design
 
 All C++ source codes should be under `./src`, where `./src/bin` are the source codes of 
