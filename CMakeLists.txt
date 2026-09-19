@@ -15,6 +15,7 @@ endif()
 
 
 find_package(absl)
+find_package(Eigen3)
 find_package(fmt)
 find_package(glaze)
 find_package(nlohmann_json)
@@ -24,6 +25,7 @@ find_package(spdlog)
 add_library(external_deps INTERFACE)
 target_link_libraries(external_deps INTERFACE 
   abseil::abseil
+  Eigen3::Eigen
   glaze::glaze
   nlohmann_json::nlohmann_json
   spdlog::spdlog 

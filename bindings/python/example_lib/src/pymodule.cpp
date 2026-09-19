@@ -5,6 +5,7 @@
 #include <fmt/base.h>
 #include <pybind11/pybind11.h>
 #include <pybind11/stl.h>
+#include <pybind11/eigen.h>
 
 #include "example.h"
 
@@ -24,7 +25,10 @@ void bot_status_pybind(py::module &m) {
 void bot_pybind(py::module &m) {
   py::class_<Bot>(m, "Bot")
       .def(py::init<>())
-      .def("move_to", &Bot::move_to);
+      .def("move_to", &Bot::move_to)
+      .def("sum_matrix", &Bot::sum_matrix,
+           "Sums all elements of an input numpy ndarray (as an Eigen matrix)",
+           py::arg("mat"));
 }
 
 

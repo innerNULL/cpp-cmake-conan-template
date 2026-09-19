@@ -6,7 +6,6 @@ cmake_minimum_required(VERSION 3.15)
 
 
 find_package(pybind11)
-find_package(pybind11_json)
 
 
 pybind11_add_module(py_example_lib ${CMAKE_CURRENT_SOURCE_DIR}/src/pymodule.cpp)

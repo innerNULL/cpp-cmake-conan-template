@@ -55,15 +55,18 @@ Try example libraries's Python binding:
 cp ./build/build/Release/bindings/python/example_lib/py_example_lib.* ./
 
 python -c "
+import numpy as np
 import py_example_lib
 
 a = py_example_lib.add(1, 2)
 b = py_example_lib.Bot()
 c = b.move_to('up')
+d = b.sum_matrix(np.array([[1.0, 2.0], [3.0, 4.0]]))
 
 print(a)
 print(b)
 print(c)
+print(d)
 "
 ```
 

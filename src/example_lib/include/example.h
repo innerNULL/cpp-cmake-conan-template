@@ -5,6 +5,8 @@
 #include <cstdint>
 #include <string>
 
+#include <Eigen/Dense>
+
 
 namespace cpp_cmake_conan_template {
 namespace example_lib {
@@ -21,6 +23,8 @@ struct Bot {
   std::string name;
 
   BotStatus move_to(const std::string& direction);
+
+  double sum_matrix(const Eigen::MatrixXd& mat) const;
 };
 
 
