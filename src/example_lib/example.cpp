@@ -15,6 +15,11 @@ BotStatus Bot::move_to(const std::string& direction) {
 }
 
 
+double Bot::sum_matrix(const Eigen::MatrixXd& mat) const {
+  return mat.sum();
+}
+
+
 int32_t add(const int32_t a, const int32_t b) {
   return a + b;
 }
