@@ -1,5 +1,6 @@
 [requires]
 abseil/20250814.0
+eigen/5.0.1
 fmt/11.2.0
 glaze/7.4.0
 nlohmann_json/3.11.2
